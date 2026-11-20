@@ -34,6 +34,5 @@ single-zone heat–moisture balance  ──►  danger share per site
 
 | Project | What it is | Stack |
 | :--- | :--- | :--- |
-| [PillGuard AI](<PillGuard-repo-url>) · [live](<render-demo-url>) | Web app for visually impaired and elderly users: photo of a handwritten prescription, GPT-4o OCR, a human-verified table, then a dosing schedule pushed to Google Calendar. Working prototype by a team of three (Intel AI Impact Festival 2026); OCR accuracy has not been evaluated. | Flask, Tailwind CSS, JavaScript, OpenAI APIs, Google Calendar API |
 | [AI-Powered EdTech Web](https://github.com/lenghiemgiaphu/stem-exam-practice-web) · [link](https://labluyen.vercel.app/#/) | Solo exam-practice platform for high-school Physics, Chemistry and Biology: four question types, timed mock exams scored out of 10, AI quiz generation from documents, an AI tutor and live classroom quiz battles. Demo-scale bank of 57 questions. | Next.js, TypeScript, Tailwind CSS, Firebase Auth, Upstash Redis, Gemini |
 | [Screen Translator](https://github.com/lenghiemgiaphu/desktop-screen-translator) | Windows tray tool: hotkey region capture, Tesseract OCR, and translation through a fuzzy-matched local glossary with Google Translate as fallback. | Python, PyQt5, Tesseract, deep-translator |
