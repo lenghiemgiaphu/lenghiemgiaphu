@@ -6,7 +6,7 @@ Mathematics student at the **High School for the Gifted (PTNK), VNU-HCM** (Ho Ch
 
 ## Research and modelling
 
-**[HiMCM_2026_ProblemB_Team19386](https://github.com/lenghiemgiaphu/HiMCM_2026_ProblemB_Team19386)**: a heat–moisture balance framework for measuring and optimising cooling in open-air and semi-open public spaces (HiMCM 2026, Problem B, Team #19386).
+**[public-space-cooling-model](https://github.com/lenghiemgiaphu/public-space-cooling-model)**: a heat–moisture balance framework for measuring and optimising cooling in open-air and semi-open public spaces (HiMCM 2026, Problem B, Team #19386).
 A single-zone, hourly steady-state model is run over seven summers (June–August, 2020–2026; 09:00–21:00, 7,728 hours per site) of Open-Meteo data, for four sites (Hanoi Bus Stop, Hanoi Railway Station, Honolulu Airport, Sun Devil Stadium) and three cooling systems. A coverage scaling law ρ = c·n·A_cov / A_floor keeps efficiency flat while ρ ≤ 1 and lets it fall as 1/ρ beyond that. Designs are compared on a four-objective Pareto front combined with AHP (CR = 0.0038), then stress-tested with 56 one-at-a-time sensitivity runs, a +3 °C heatwave scenario and 10,000 Monte Carlo runs over 16 configurations. The main finding is that energy efficiency is not the same as risk reduction: at Sun Devil Stadium the share of dangerous hours falls from 66.31% to 50.25% with configuration `C-40`, and at Hanoi Railway Station from 56.84% to 49.50% with `B-40`. I was team leader, built the Cooling-Efficiency and Semi-Open Rail Station models, ran the Monte Carlo analysis and wrote the blog post. Team: Le Minh, Do Le Chi Hung, Tran Hung Phat.
 
 ```text
