@@ -1,6 +1,6 @@
 # Le Nghiem Gia Phu · Lê Nghiêm Gia Phú
 
-Mathematics student at the **High School for the Gifted (PTNK), VNU-HCM** (Ho Chi Minh City, Vietnam). I like projects where a transparent model meets imperfect real data: heat–moisture modelling of public spaces, machine translation for a low-resource language, and software that helps people study or take their medicine. I plan to study applied mathematics, computer science and artificial intelligence.
+Mathematics student at the **High School for the Gifted (PTNK), VNU-HCM** (Ho Chi Minh City, Vietnam). I like projects where a transparent model meets imperfect real data: heat–moisture modelling of public spaces, or machine translation for a low-resource language. I plan to study Applied Mathematics, Computer Science and Artificial Intelligence.
 
 ---
 
