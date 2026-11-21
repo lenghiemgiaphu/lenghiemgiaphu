@@ -6,23 +6,22 @@ Mathematics student at the **High School for the Gifted (PTNK), VNU-HCM** (Ho Ch
 
 ## Research and modelling
 
-**[Public-Space Cooling Model](https://github.com/lenghiemgiaphu/public-space-cooling-model)**: a heat–moisture balance framework for measuring and optimising cooling in open-air and semi-open public spaces (HiMCM 2026, Problem B, Team #19386).
-A single-zone, hourly steady-state model is run over seven summers (June–August, 2020–2026; 09:00–21:00, 7,728 hours per site) of Open-Meteo data, for four sites (Hanoi Bus Stop, Hanoi Railway Station, Honolulu Airport, Sun Devil Stadium) and three cooling systems. A coverage scaling law ρ = c·n·A_cov / A_floor keeps efficiency flat while ρ ≤ 1 and lets it fall as 1/ρ beyond that. Designs are compared on a four-objective Pareto front combined with AHP (CR = 0.0038), then stress-tested with 56 one-at-a-time sensitivity runs, a +3 °C heatwave scenario and 10,000 Monte Carlo runs over 16 configurations. The main finding is that energy efficiency is not the same as risk reduction: at Sun Devil Stadium the share of dangerous hours falls from 66.31% to 50.25% with configuration `C-40`, and at Hanoi Railway Station from 56.84% to 49.50% with `B-40`. I was team leader, built the Cooling-Efficiency and Semi-Open Rail Station models, ran the Monte Carlo analysis and wrote the blog post. Team: Le Minh, Do Le Chi Hung, Tran Hung Phat.
+[Public-Space Cooling Model](https://github.com/lenghiemgiaphu/public-space-cooling-model): a heat–moisture balance framework for choosing cooling systems in open-air and semi-open public spaces (HiMCM 2026, Problem B, Team #19386; results pending). An hourly, quasi-steady, single-zone model is run over seven summers of Open-Meteo data (June–August 2020–2026, 09:00–21:00, 7,728 hours per venue) for four venues (Hanoi Bus Shelter, Hanoi Railway Station, Honolulu Airport, Sun Devil Stadium) and three cooling systems (fans, medium and large evaporative coolers). Configurations are screened on a four-objective Pareto front and ranked with AHP (CR = 0.0038), then stress-tested with 56 one-at-a-time sensitivity cases, a +3 °C heatwave scenario and 10,000 Monte Carlo runs over 16 configurations. The main finding is that efficiency per kWh is not the same as risk reduction, and that the right technology depends on climate: evaporative cooling is limited by the small wet-bulb depression in humid Hanoi but works in dry Phoenix. At Sun Devil Stadium the share of person-hours in the danger zone (team-modified apparent temperature ≥ 38 °C) falls from 66.31% to 50.25% with 40 large evaporative units (`C-40`), and at Hanoi Railway Station from 56.84% to 49.50% with 40 medium units (`B-40`); about half of person-hours stay above the threshold, so hardware must be paired with shade, water and heat monitoring. Limits (uncalibrated model, internal comfort index, placeholder prices) are stated in the repository. I was team leader, formulated the Cooling-Efficiency and Semi-Open Rail Station models, and contributed to the Monte Carlo analysis and the blog post. Team: Le Minh, Do Le Chi Hung, Tran Hung Phat.
 
 ```text
-Open-Meteo hourly weather (2020–2026, 09:00–21:00)
-        │
-        ▼
-single-zone heat–moisture balance  ──►  danger share per site
-        ▲                                      │
-  cooling system (A / B / C)                   ▼
-  × coverage ratio ρ = c·n·A_cov/A_floor   Pareto front (4 objectives) + AHP
-                                               │
-                                               ▼
-                       56 OAT tests · +3 °C heatwave · Monte Carlo (10,000 × 16 configs)
-                                               │
-                                               ▼
-                                   recommendation for each site
+Open-Meteo hourly weather (2020–2026, 09:00–21:00) + occupancy + venue geometry
+                               │
+                               ▼
+     single-zone heat–moisture balance  ×  cooling system (A / B / C), unit count n
+                               │
+                               ▼
+   danger share and EDH38 per venue  →  4-objective Pareto front  →  AHP ranking
+                               │
+                               ▼
+   56 OAT cases · +3 °C heatwave · Monte Carlo (10,000 draws × 16 configurations)
+                               │
+                               ▼
+                    recommendation for each venue
 ```
 
 **[Ede–Vietnamese Machine Translation](https://github.com/lenghiemgiaphu/low-resource-ede-vietnamese-nmt)**: a proof-of-concept Ede–Vietnamese translation model for a low-resource language (about 400,000 speakers), built for the PIISE Research Program with Tran Hung Phat.
